@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
+import { getCollection } from "astro:content";
+
+const projects = (await getCollection("projects")).filter((p) => !p.data.draft);
+---
+
+<BaseLayout title="Projects" description="Portfolio of engineering projects.">
+  <section class="py-12">
+    <h1 class="text-3xl font-bold tracking-tight mb-2">Projects</h1>
+    <p class="text-foreground-muted mb-8">
+      A collection of projects demonstrating capabilities across software,
+      infrastructure, and systems engineering.
+    </p>
+
+    {projects.length > 0 ? (
+      <div class="grid gap-6">
+        {projects.map((project) => (
+          <ProjectCard
+            title={project.data.title}
+            description={project.data.description}
+            tags={project.data.tags}
+            repo={project.data.repo}
+            live={project.data.live}
+          />
+        ))}
+      </div>
+    ) : (
+      <p class="text-foreground-muted italic">Projects coming soon.</p>
+    )}
+  </section>
+</BaseLayout>

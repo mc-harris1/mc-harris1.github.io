@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Home">
+  <section class="py-12">
+    <h1 class="text-4xl font-bold tracking-tight mb-4">
+      Engineering systems that are clear, structured, and built to last.
+    </h1>
+    <p class="text-lg text-foreground-muted max-w-2xl mb-8">
+      I design and build software systems with an emphasis on clarity,
+      maintainability, and technical depth. This platform documents how I work
+      and what I've built.
+    </p>
+    <div class="flex gap-4">
+      <a
+        href="/projects"
+        class="inline-block px-5 py-2.5 bg-accent text-surface font-medium rounded hover:bg-accent-hover transition-colors"
+      >
+        View Projects
+      </a>
+      <a
+        href="https://www.linkedin.com/in/mc-harris"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block px-5 py-2.5 border border-border text-foreground-muted rounded hover:text-foreground hover:border-foreground-muted transition-colors"
+      >
+        Get in Touch
+      </a>
+    </div>
+  </section>
+</BaseLayout>

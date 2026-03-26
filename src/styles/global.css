@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  /* Surface */
+  --color-surface: #0f0f11;
+  --color-surface-alt: #1a1a1f;
+
+  /* Foreground */
+  --color-foreground: #e4e4e7;
+  --color-foreground-muted: #a1a1aa;
+
+  /* Accent */
+  --color-accent: #60a5fa;
+  --color-accent-hover: #93bbfd;
+
+  /* Border */
+  --color-border: #27272a;
+
+  /* Typography */
+  --font-sans: "Inter", "system-ui", "sans-serif";
+  --font-mono: "JetBrains Mono", "monospace";
+}
+
+:root {
+  /* Spacing scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+}
