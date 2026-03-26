@@ -30,3 +30,33 @@
   --space-xl: 4rem;
   --space-2xl: 6rem;
 }
+
+/* Glitch effect utility */
+.glitch-hover {
+  position: relative;
+  transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.glitch-hover:hover,
+.glitch-hover:focus {
+  text-shadow: 
+    2px 0 var(--color-accent),
+    -2px 0 var(--color-accent-hover);
+  transform: translateX(1px);
+}
+
+.glitch-hover:focus-visible {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glitch-hover {
+    transition: color 0.15s ease;
+  }
+
+  .glitch-hover:hover,
+  .glitch-hover:focus {
+    text-shadow: none;
+    transform: none;
+  }
+}
