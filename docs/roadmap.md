@@ -148,13 +148,13 @@ Support professional engagement and conversion.
 
 * define clear services or areas of expertise
 * create a dedicated consulting section
-* establish a simple and effective contact path
+* use LinkedIn as the primary contact mechanism
 * ensure messaging aligns with actual capabilities
 
 ### Outcomes
 
 * clearer professional positioning
-* easier path for potential clients to engage
+* lower-friction path for potential clients to engage
 * alignment between portfolio and consulting offering
 
 ---

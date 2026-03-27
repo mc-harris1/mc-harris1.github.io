@@ -367,12 +367,15 @@ Analytics are not required for the first implementation.
 
 ## 15. Contact and Conversion Mechanisms
 
-Approved options:
+Approved approach:
 
-- direct email link
+- LinkedIn as the primary contact mechanism
+- direct links to external professional profiles where useful
+
+Optional additions if they remain low-friction and clearly justified:
+
 - scheduling link
-- simple contact page
-- external form provider if needed
+- external form provider
 
 Not approved for initial implementation:
 
@@ -380,7 +383,7 @@ Not approved for initial implementation:
 - unnecessary authentication
 - complex CRM integration
 
-The contact path should be simple and low-friction.
+The contact path should be simple, low-friction, and avoid adding standalone site complexity unless it materially improves conversion.
 
 ---
 
